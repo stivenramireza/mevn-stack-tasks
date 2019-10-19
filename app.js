@@ -2,8 +2,20 @@ import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
 import path from 'path';
+import mongoose from 'mongoose';
 
 const app = express();
+
+// Connection to Database
+const uri = 'mongodb://localhost:27017/udemy';
+const options = {
+    useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true
+};
+
+mongoose.connect(uri, options).then(
+    () => { console.log('Database connected successfully') },
+    err => { console.log(err) }
+  );
 
 // Middleware
 app.use(morgan('tiny'));
