@@ -1,0 +1,25 @@
+{
+  "name": "mevn-stack",
+  "version": "1.0.0",
+  "description": "MongoDB + Express + Vue.js + Node.js (MEVN) stack from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stivenramireza/mevn-stack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stivenramireza/mevn-stack/issues"
+  },
+  "homepage": "https://github.com/stivenramireza/mevn-stack#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  }
+}
